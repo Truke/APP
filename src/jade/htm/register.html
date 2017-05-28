@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="maximum-dpr=3" name="flexible">
+    <meta content="modeName=750-12" name="grid">
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="appModule app-register">
+        <div class="register">
+          <form>
+            <div class="row">
+              <label> <span>*</span>用户名：</label>
+              <input type="text" name="username" placeholder="账号为6-16位字母或数字，首位必须为字母...">
+            </div>
+            <div class="row">
+              <label> <span>*</span>身份证号：</label>
+              <input type="text" name="cards" placeholder="身份证号...">
+            </div>
+            <div class="row">
+              <label> <span>*</span>姓名：</label>
+              <input type="text" name="realname" placeholder="真实姓名...">
+            </div>
+            <div class="row">
+              <label><span>*</span>手机号：</label>
+              <input type="tel" name="mobile" placeholder="手机号或座机号...">
+            </div>
+            <div class="row">
+              <label><span>*</span>邮箱：</label>
+              <input type="email" name="email" placeholder="邮箱地址...">
+            </div>
+            <div class="row">
+              <label><span>*</span>密码：</label>
+              <input type="password" name="password" placeholder="密码为6-18位字母或数字...">
+            </div>
+            <div class="row">
+              <label><span>*</span>重复密码：</label>
+              <input type="password" name="commit" placeholder="确认密码...">
+            </div>
+            <div class="row">
+              <label>会员卡号：</label>
+              <input type="text" name="membernum">
+            </div>
+            <div class="row pro">
+              <input type="checkbox" name="protocol"><strong>统一会员注册协议、《法律声明及隐私权政策》及愿意接受来自网站的会员服务消息</strong>
+            </div>
+            <div class="row">
+              <button id="sure" type="submit">确认</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="maximum-dpr=3" name="flexible">
+    <meta content="modeName=750-12" name="grid">
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>预约信息录入</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="appModule app-e-b">
+        <h1>预约信息录入</h1>
+        <div class="tableM">
+          <form>
+            <table>
+              <tbody>
+                <tr>
+                  <td colspan="4" class="tit">客户预约填报资料</td>
+                </tr>
+                <tr>
+                  <td class="nowrap">检测项目名称</td>
+                  <td colspan="3">骨密度检测</td>
+                </tr>
+                <tr>
+                  <td>检测人姓名</td>
+                  <td colspan="3">
+                    <input type="text" name="name">
+                  </td>
+                </tr>
+                <tr>
+                  <td>性别</td>
+                  <td>
+                    <input id="male" type="radio" name="gender">
+                    <label for="male">男</label>
+                    <input id="female" type="radio" name="gender">
+                    <label for="female">女</label>
+                  </td>
+                  <td class="nowrap">身份证号</td>
+                  <td>
+                    <input type="text" name="card">
+                  </td>
+                </tr>
+                <tr>
+                  <td>单位地址</td>
+                  <td colspan="3">
+                    <input type="text" name="address">
+                  </td>
+                </tr>
+                <tr>
+                  <td>联系方式</td>
+                  <td>
+                    <input type="text" name="contect">
+                  </td>
+                  <td class="nowrap">预约时间</td>
+                  <td>
+                    <input type="date" name="yydate">
+                  </td>
+                </tr>
+                <tr>
+                  <td>备注</td>
+                  <td colspan="3">
+                    <textarea row="4"></textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="btns">
+              <button id="reset" type="reset">重置</button>
+              <button id="refer" type="submit">提交</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer"><a class="menu-item on"><span><i class="iconfont icon-home"></i></span>
+          <p>首页</p></a><a class="menu-item"><span><i class="iconfont icon-star"></i></span>
+          <p>服务中心</p></a><a class="menu-item"><span><i class="iconfont icon-boxico02"></i></span>
+          <p>信息中心</p></a></div>
+    </div>
+  </body>
+</html>

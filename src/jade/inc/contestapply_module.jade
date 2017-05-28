@@ -1,0 +1,38 @@
+div.appModule.app-c-a
+	div.tableM
+		table
+			tr
+				td.tit(colspan='6')
+					label 团体名称：
+					input(type='text',name='groupname')
+			tr
+				td 姓名
+				td 性别
+				td 年龄
+				td 身份证号
+				td 手机号
+				td.nowrap
+					a.btnAdd
+						| 添加人员
+						i.iconfont.icon-add
+
+			tr
+				td
+					input(type='text')
+				td.nowrap
+					label(for='male1') 男
+					input#male1(type='radio')
+					label(for='female1') 女
+					input#female1(type='radio')
+				td
+					input(type='num')
+				td
+					input(type='text')
+				td
+					input(type='tel')
+				td
+					a.btnD
+						i.iconfont.icon-del
+			tr
+				td(colspan='6')
+					a.btnY 全部提交

@@ -1,0 +1,47 @@
+div.appModule.app-c-l
+	div.tabMoni
+		input#moni1(type='radio',name='contests',value='1',checked)
+		input#moni2(type='radio',name='contests',value='2')
+		ul.tablis
+			li
+				label(for='moni1') 可报赛事
+			li
+				label(for='moni2') 结束赛事
+		div.tabcont#tabcont1
+			div.tableM
+				table
+					tr
+						td.tit(colspan='5') 正在报名的赛事
+					tr
+						td 赛事名称
+						td.nowrap 操作
+						td.nowrap 比赛城市
+						td 比赛时间
+						td.nowrap 可参赛人数
+					tr
+						td 
+							a 乒乓球联赛
+						td
+							a 报名
+						td 济南
+						td 2017.05.11--2017.05.15
+						td 23
+		div.tabcont#tabcont2
+			div.tableM
+				table
+					tr
+						td.tit(colspan='5') 已结束的赛事
+					tr
+						td 赛事名称
+						td.nowrap 操作
+						td.nowrap 比赛城市
+						td 比赛时间
+						td.nowrap 可参赛人数
+					tr
+						td 
+							a 乒乓球联赛
+						td
+							a 查看
+						td 济南
+						td 2017.05.11--2017.05.15
+						td 23

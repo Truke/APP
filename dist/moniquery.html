@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="maximum-dpr=3" name="flexible">
+    <meta content="modeName=750-12" name="grid">
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>监测查询</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="appModule app-m-q">
+        <div class="tabMoni">
+          <input id="moni1" type="radio" name="query" value="1" checked>
+          <input id="moni2" type="radio" name="query" value="2">
+          <ul class="tablis">
+            <li>
+              <label for="moni1">青少年报告查询</label>
+            </li>
+            <li>
+              <label for="moni2">成人报告查询</label>
+            </li>
+          </ul>
+          <div id="tabcont1" class="tabcont">
+            <form><img src="images/moniqueryimg.png" class="imgquery">
+              <div class="row">
+                <label>姓名：</label>
+                <input id="name" type="text" name="name">
+              </div>
+              <div class="row">
+                <label>性别：</label>
+                <input id="male" type="radio" name="gender"><span>男</span>
+                <input id="female" type="radio" name="gender"><span>女</span>
+              </div>
+              <div class="row">
+                <label>出生日期：</label>
+                <input id="birthday1" type="date" name="birthday1">
+              </div>
+              <div class="row btns">
+                <button id="query1btn" type="submit">查询</button>
+              </div>
+            </form>
+          </div>
+          <div id="tabcont2" class="tabcont">
+            <form><img src="images/moniqueryimg.png" class="imgquery">
+              <div class="row">
+                <label>单号查询：</label>
+                <input id="order" type="text" name="order">
+              </div>
+              <div class="row">
+                <label>出生日期：</label>
+                <input id="birthday2" type="date" name="birthday2">
+              </div>
+              <div class="row btns">
+                <button id="query2btn" type="submit">查询</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer"><a class="menu-item on"><span><i class="iconfont icon-home"></i></span>
+          <p>首页</p></a><a class="menu-item"><span><i class="iconfont icon-star"></i></span>
+          <p>服务中心</p></a><a class="menu-item"><span><i class="iconfont icon-boxico02"></i></span>
+          <p>信息中心</p></a></div>
+    </div>
+  </body>
+</html>

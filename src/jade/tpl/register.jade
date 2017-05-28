@@ -1,0 +1,56 @@
+doctype
+html
+	head
+		include ../inc/headmeta
+		meta(name='keywords',content='')
+		meta(name='description',content='')
+		title 注册
+		link(rel='stylesheet',href='css/app.css')
+	body
+		div.app
+			div.appModule.app-register
+				div.register
+					form
+						div.row
+							label 
+								span *
+								| 用户名：
+							input(type='text',name='username',placeholder='账号为6-16位字母或数字，首位必须为字母...')
+						div.row
+							label 
+								span *
+								| 身份证号：
+							input(type='text',name='cards',placeholder='身份证号...')
+						div.row
+							label 
+								span *
+								| 姓名：
+							input(type='text',name='realname',placeholder='真实姓名...')
+						div.row
+							label
+								span *
+								| 手机号：
+							input(type='tel',name='mobile',placeholder='手机号或座机号...')
+						div.row
+							label
+								span *
+								| 邮箱：
+							input(type='email',name='email',placeholder='邮箱地址...')
+						div.row
+							label
+								span *
+								| 密码：
+							input(type='password',name='password',placeholder='密码为6-18位字母或数字...')
+						div.row
+							label
+								span *
+								| 重复密码：
+							input(type='password',name='commit',placeholder='确认密码...')
+						div.row
+							label 会员卡号：
+							input(type='text',name='membernum')
+						div.row.pro
+							input(type='checkbox',name='protocol')
+							strong 统一会员注册协议、《法律声明及隐私权政策》及愿意接受来自网站的会员服务消息
+						div.row
+							button#sure(type='submit') 确认

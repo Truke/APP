@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="maximum-dpr=3" name="flexible">
+    <meta content="modeName=750-12" name="grid">
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="appModule">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a><img src="images/slide1.png" width="100%"></a></div>
+            <div class="swiper-slide"><a><img src="images/slide1.png" width="100%"></a></div>
+            <div class="swiper-slide"><a><img src="images/slide1.png" width="100%"></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="lastedMsg">
+          <p><i class="iconfont icon-msg"></i>最新通知最新通知最新通知最新通知最新通知最新通知最新通知最新通知最新通知</p>
+        </div>
+        <div class="cells clearfix">
+          <div class="cell-item cdjs"><a><img src="images/cells-cdjs.png"></a></div>
+          <div class="cell-item jcjs"><a><img src="images/cells-jcjs.png"></a></div>
+          <div class="cell-item pxxm"><a><img src="images/cells-pxxm.png"></a></div>
+          <div class="cell-item yycd"><a><img src="images/cells-yycd.png"></a></div>
+          <div class="cell-item yyjc"><a><img src="images/cells-yyjc.png"></a></div>
+          <div class="cell-item ssbm"><a><img src="images/cells-ssbm.png"></a></div>
+        </div>
+        <div class="navlis">
+          <div class="nav-li zxjj"><a><img src="images/navlis-zxjj.png"><span><em>中</em><em>心</em><em>简</em><em>介</em></span></a></div>
+          <div class="nav-li xwzx"><a><img src="images/navlis-xwzx.png"><span><em>新</em><em>闻</em><em>中</em><em>心</em></span></a></div>
+          <div class="nav-li jcss"><a><img src="images/navlis-jcss.png"><span><em>精</em><em>彩</em><em>赛</em><em>事</em></span></a></div>
+          <div class="nav-li jswh"><a><img src="images/navlis-jswh.png"><span><em>健</em><em>身</em><em>文</em><em>化</em></span></a></div>
+        </div>
+      </div>
+      <link rel="stylesheet" href="css/swiper.min.css">
+      <script src="js/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+        	pagination: '.swiper-pagination',
+        	paginationClickable: true
+        });
+      </script>
+      <div class="footer"><a class="menu-item on"><span><i class="iconfont icon-home"></i></span>
+          <p>首页</p></a><a class="menu-item"><span><i class="iconfont icon-star"></i></span>
+          <p>服务中心</p></a><a class="menu-item"><span><i class="iconfont icon-boxico02"></i></span>
+          <p>信息中心</p></a></div>
+    </div>
+  </body>
+</html>

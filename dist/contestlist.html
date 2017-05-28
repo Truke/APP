@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="maximum-dpr=3" name="flexible">
+    <meta content="modeName=750-12" name="grid">
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>赛事列表</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="appModule app-c-l">
+        <div class="tabMoni">
+          <input id="moni1" type="radio" name="contests" value="1" checked>
+          <input id="moni2" type="radio" name="contests" value="2">
+          <ul class="tablis">
+            <li>
+              <label for="moni1">可报赛事</label>
+            </li>
+            <li>
+              <label for="moni2">结束赛事</label>
+            </li>
+          </ul>
+          <div id="tabcont1" class="tabcont">
+            <div class="tableM">
+              <table>
+                <tr>
+                  <td colspan="5" class="tit">正在报名的赛事</td>
+                </tr>
+                <tr>
+                  <td>赛事名称</td>
+                  <td class="nowrap">操作</td>
+                  <td class="nowrap">比赛城市</td>
+                  <td>比赛时间</td>
+                  <td class="nowrap">可参赛人数</td>
+                </tr>
+                <tr>
+                  <td> <a>乒乓球联赛</a></td>
+                  <td><a>报名</a></td>
+                  <td>济南</td>
+                  <td>2017.05.11--2017.05.15</td>
+                  <td>23</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="tabcont2" class="tabcont">
+            <div class="tableM">
+              <table>
+                <tr>
+                  <td colspan="5" class="tit">已结束的赛事</td>
+                </tr>
+                <tr>
+                  <td>赛事名称</td>
+                  <td class="nowrap">操作</td>
+                  <td class="nowrap">比赛城市</td>
+                  <td>比赛时间</td>
+                  <td class="nowrap">可参赛人数</td>
+                </tr>
+                <tr>
+                  <td> <a>乒乓球联赛</a></td>
+                  <td><a>查看</a></td>
+                  <td>济南</td>
+                  <td>2017.05.11--2017.05.15</td>
+                  <td>23</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"><a class="menu-item on"><span><i class="iconfont icon-home"></i></span>
+          <p>首页</p></a><a class="menu-item"><span><i class="iconfont icon-star"></i></span>
+          <p>服务中心</p></a><a class="menu-item"><span><i class="iconfont icon-boxico02"></i></span>
+          <p>信息中心</p></a></div>
+    </div>
+  </body>
+</html>

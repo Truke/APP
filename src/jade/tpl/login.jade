@@ -1,0 +1,28 @@
+doctype
+html
+	head
+		include ../inc/headmeta
+		meta(name='keywords',content='')
+		meta(name='description',content='')
+		title 登录
+		link(rel='stylesheet',href='css/app.css')
+	body
+		div.app
+			div.appModule.app-login
+				div.logtit
+					img.logoimg(src='images/logo.png')
+				div.logtitbg
+					img(src='images/loginbg.png')
+				div.formDiv
+					form
+						div.row
+							i.rowicon.iconfont.icon-user
+							input#username(type='text',name='username',placeholder='手机号码/用户名')
+						div.row
+							i.rowicon.iconfont.icon-iconfontsuo
+							input#password(type='password',name='password',placeholder='密码')
+						div.row.forget
+							a 忘记密码
+						button#refer(type='submit') 登 录
+						div.row.newreg
+							a(href='register.html') 新注册用户

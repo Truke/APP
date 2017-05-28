@@ -1,0 +1,37 @@
+div.appModule.app-m-q
+	div.tabMoni
+		input#moni1(type='radio',name='query',value='1',checked)
+		input#moni2(type='radio',name='query',value='2')
+		ul.tablis
+			li
+				label(for='moni1') 青少年报告查询
+			li
+				label(for='moni2') 成人报告查询
+		div.tabcont#tabcont1
+			form
+				img.imgquery(src='images/moniqueryimg.png')
+				div.row
+					label 姓名：
+					input#name(type='text',name='name')
+				div.row
+					label 性别：
+					input#male(type='radio',name='gender')
+					span 男
+					input#female(type='radio',name='gender')
+					span 女
+				div.row
+					label 出生日期：
+					input#birthday1(type='date',name='birthday1')
+				div.row.btns
+					button#query1btn(type='submit') 查询
+		div.tabcont#tabcont2
+			form
+				img.imgquery(src='images/moniqueryimg.png')
+				div.row
+					label 单号查询：
+					input#order(type='text',name='order')
+				div.row
+					label 出生日期：
+					input#birthday2(type='date',name='birthday2')
+				div.row.btns
+					button#query2btn(type='submit') 查询

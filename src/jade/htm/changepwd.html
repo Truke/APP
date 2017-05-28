@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="maximum-dpr=3" name="flexible">
+    <meta content="modeName=750-12" name="grid">
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>修改密码</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="appModule app-changepwd">
+        <div class="changepwd">
+          <form>
+            <div class="row">
+              <label><span>*</span>原密码：</label>
+              <input id="old" type="password" name="old" placeholder="密码为6-18位字母或数字...">
+            </div>
+            <div class="row">
+              <label><span>*</span>新密码：</label>
+              <input id="new" type="password" name="new" placeholder="密码为6-18位字母或数字...">
+            </div>
+            <div class="row">
+              <label><span>*</span>重复密码：</label>
+              <input type="password" name="again" class="again">
+            </div>
+            <div class="row btns">
+              <button id="submit" type="submit">确认修改</button>
+              <button id="reset" type="reset">重置</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer"><a class="menu-item on"><span><i class="iconfont icon-home"></i></span>
+          <p>首页</p></a><a class="menu-item"><span><i class="iconfont icon-star"></i></span>
+          <p>服务中心</p></a><a class="menu-item"><span><i class="iconfont icon-boxico02"></i></span>
+          <p>信息中心</p></a></div>
+    </div>
+  </body>
+</html>

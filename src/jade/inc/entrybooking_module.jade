@@ -1,0 +1,43 @@
+div.appModule.app-e-b
+	h1 预约信息录入
+	div.tableM
+		form
+			table
+				tbody
+					tr
+						td.tit(colspan='4') 客户预约填报资料
+					tr
+						td.nowrap 检测项目名称
+						td(colspan='3') 骨密度检测
+					tr
+						td 检测人姓名
+						td(colspan='3')
+							input(type='text',name='name')
+					tr
+						td 性别
+						td
+							input#male(type='radio',name='gender')
+							label(for='male') 男
+							input#female(type='radio',name='gender')
+							label(for='female') 女
+						td.nowrap 身份证号
+						td
+							input(type='text',name='card')
+					tr
+						td 单位地址
+						td(colspan='3')
+							input(type='text',name='address')
+					tr
+						td 联系方式
+						td
+							input(type='text',name='contect')
+						td.nowrap 预约时间
+						td
+							input(type='date',name='yydate')
+					tr
+						td 备注
+						td(colspan='3')
+							textarea(row='4')
+			div.btns
+				button#reset(type='reset') 重置
+				button#refer(type='submit') 提交

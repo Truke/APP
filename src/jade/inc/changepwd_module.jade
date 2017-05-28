@@ -1,0 +1,21 @@
+div.appModule.app-changepwd
+	div.changepwd
+		form
+			div.row
+				label
+					span *
+					| 原密码：
+				input#old(type='password',name='old',placeholder='密码为6-18位字母或数字...')
+			div.row
+				label
+					span *
+					| 新密码：
+				input#new(type='password',name='new',placeholder='密码为6-18位字母或数字...')
+			div.row
+				label
+					span *
+					| 重复密码：
+				input.again(type='password',name='again')
+			div.row.btns
+				button#submit(type='submit') 确认修改
+				button#reset(type='reset') 重置
