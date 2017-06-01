@@ -53,18 +53,18 @@ script.
 	function initDropLoad(){
 		if(dropload){
 			if(totalpage>page){
+				dropload.noData(false);
 				dropload.unlock();
 			}else{
+				dropload.noData();
 				dropload.lock();
 			}
 		}else if(!dropload&&totalpage>1){
 			dropload = $obj.dropload({
 		        scrollArea : $obj,
 		        loadDownFn : function(dropme){
-	            	if(totalpage>page&&startload){
-		            	startload = false;
+	            	if(totalpage>page){
 		            	getData(type,++page,rows,function(){
-		            		startload = true;
 		            		dropme.resetload();
 		            	});
 		            }else{
