@@ -32,28 +32,73 @@
             </li>
           </ul>
           <div class="tabline"></div>
-          <div class="tabpanel">
-            <ul>
-              <li><a>
-                  <h2>济南市第六届全民健身运动会中式台球邀请赛圆满落幕1</h2>
-                  <p> <span class="from">来源：中心动态</span><span class="dt">08-05 23:58</span></p></a></li>
-              <li><a>
-                  <h2>济南市第六届全民健身运动会中式台球邀请赛圆满落幕2</h2>
-                  <p> <span class="from">来源：中心动态</span><span class="dt">08-05 23:58</span></p></a></li>
-            </ul>
-          </div>
+        </div>
+        <div class="tabpanel">
+          <ul></ul>
         </div>
       </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/dropload.min.js"></script>
       <script>
-        !(function(){
-        	var obj = document.querySelector('.tabpanel');
-        	document.addEventListener('change',function(e){
-        		var dom = e.target || e.srcElement;
-        		if(dom.nodeName === 'INPUT'&&dom.name==='type'){
-        			obj.innerHTML = '发送异步请求参数'+dom.value;
+        var type=1,
+        	page=1,
+        	rows=10,
+        	totalpage=2,
+        	dropload,
+        	startload = !0,
+        	$obj = $('.tabpanel'),
+        	$ul = $obj.find('ul');
+        getData(type,page,rows);
+        $(document).on('change',':radio',function(e){
+        	var dom = e.target || e.srcElement;
+        	page = 1;
+        	type = dom.value;
+        	getData(type,page,rows,function(){
+        		$obj.scrollTop(0);
+        	});
+        })
+        function getData(type,page,rows,fn){
+        	var i=0,
+        		html = '',
+        		str = '<li><a><h2>济南市第六届全民健身运动会中式台球邀请赛圆满落幕'+type+'</h2><p> <span class="from">来源：中心动态</span><span class="dt">08-05 23:58</span></p></a></li>';
+        	for(;i<rows;i++){
+        		html+=str;
+        	}
+        	if(page===1){
+        		$ul.html(html);
+        	}else{
+        		$ul.append(html);
+        	}
+        	initDropLoad();
+        	if($.isFunction(fn)){
+        		fn.call();
+        	}
+        }
+        function initDropLoad(){
+        	if(dropload){
+        		if(totalpage>page){
+        			dropload.unlock();
+        		}else{
+        			dropload.lock();
         		}
-        	})
-        }())
+        	}else if(!dropload&&totalpage>1){
+        		dropload = $obj.dropload({
+        	        scrollArea : $obj,
+        	        loadDownFn : function(dropme){
+                    	if(totalpage>page&&startload){
+        	            	startload = false;
+        	            	getData(type,++page,rows,function(){
+        	            		startload = true;
+        	            		dropme.resetload();
+        	            	});
+        	            }else{
+        	            	dropme.resetload();
+        	            }
+        	        }
+        		})
+        		dropload.unlock();
+        	}
+        }
       </script>
       <div class="footer"><a class="menu-item on"><span><i class="iconfont icon-home"></i></span>
           <p>首页</p></a><a class="menu-item"><span><i class="iconfont icon-star"></i></span>

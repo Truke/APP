@@ -3,13 +3,3 @@ block title
 	title 消息中心
 block module
 	include ../inc/messagecenter_module
-	script.
-		!(function(){
-			var obj = document.querySelector('.tabpanel');
-			document.addEventListener('change',function(e){
-				var dom = e.target || e.srcElement;
-				if(dom.nodeName === 'INPUT'&&dom.name==='type'){
-					obj.innerHTML = '发送异步请求参数'+dom.value;
-				}
-			})
-		}())
