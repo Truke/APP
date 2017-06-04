@@ -3,6 +3,7 @@ var path = require('path');
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var del = require('del');
+var concat = require('gulp-concat');
 var $ = require('gulp-load-plugins')({ lazy: true });
 var runSequence = require('run-sequence');
 var config = {
@@ -103,6 +104,7 @@ gulp.task('css', function () {
         ]))
         // .pipe(gulp.dest(config.dist + '/css'))
         .pipe($.cssnano())
+        .pipe(concat('app.css'))
         // .pipe($.rename({ suffix: '.min' }))
         .pipe(gulp.dest(config.dist + '/css'))
 });

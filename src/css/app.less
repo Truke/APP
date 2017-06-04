@@ -856,6 +856,8 @@ a,a:link,a:hover,a:active{
 		li{
 			width: 50%;
 			padding: .2rem;
+			float: left;
+			overflow: hidden;
 			a{
 				height: 100%;
 				border-radius: .2rem;
@@ -921,19 +923,23 @@ a,a:link,a:hover,a:active{
 		padding: .2rem;
 		li{
 			display: inline-block;
+			vertical-align: top;
 			width: 33.33%;
 			a{
 				display: block;
 				text-align: center;
 				margin: .2rem;
-				img{
+				i{
 					border-radius: 50%;
 					width: 100%;
+					padding-top: 100%;
+					display: block;
 				}
 				span{
 					display: block;
+					padding: .2rem 0;
 					font-size: .4rem;
-					line-height: 1rem;
+					line-height: .6rem;
 				}
 			}
 		}
